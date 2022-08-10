@@ -17,6 +17,10 @@ function textUpdate() {
     memeText.innerHTML = getTextFromInput.value;
 }
 
+function imgChange(event) {
+    memeImg.src = URL.createObjectURL(event.target.files[0]);
+}
+
 function presetBackground(event) {
     memeImg.style.width = '100%';
     memeImg.style.height = "100%";
